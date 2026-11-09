@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jay McClellan Studio — Art, Framing & Interiors</title>
+<meta name="description" content="Jay McClellan Studio — original art and commissions, bespoke custom framing, and thoughtfully curated interior design.">
+<link rel="canonical" href="https://www.jaymcclellan.com/">
+<meta property="og:site_name" content="Jay McClellan Studio">
+<meta property="og:title" content="Jay McClellan Studio — Art, Framing & Interiors">
+<meta property="og:description" content="Art, custom framing and interiors — thoughtfully curated.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.jaymcclellan.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF8F4">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Jay McClellan Studio","url":"https://www.jaymcclellan.com/","description":"Original art and commissions, custom framing, and interior design.","founder":{"@type":"Person","name":"Jay McClellan"},"knowsAbout":["Fine art","Custom picture framing","Interior design"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;350;400;450;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+
+<!--
+  ================= CONTENT =================
+  Jay: everything editable lives in this block — artworks, projects, hero rotation,
+  framing options and contact details. Add an artwork by copying one line in
+  "artworks" and pointing "src" to a new image. No other code needs to change.
+-->
+<script>
+window.SITE = {
+  contact:{
+    email:"[ studio email ]",
+    phone:"[ studio phone ]",
+    location:"[ studio location / by appointment ]",
+    instagram:"#", facebook:"#", pinterest:"#",
+    formEndpoint:"" // e.g. "https://formspree.io/f/xxxx" — leave blank for demo mode
+  },
+  artworks:[
+    {id:"a1", src:"assets/art1.jpg", title:"Stansfield Commission — I",  meta:"Commission · 2022", collection:"Stansfield Commission 2022", alt:"Painted portrait of two dogs resting on a patterned sofa above a wooden floor"},
+    {id:"a2", src:"assets/art2.jpg", title:"Stansfield Commission — II", meta:"Commission · 2022", collection:"Stansfield Commission 2022", alt:"Portrait of a grey and a cream dog standing before a floral wallpaper"},
+    {id:"a7", src:"assets/art7.jpg", title:"Untitled Pair",             meta:"Details to come",   collection:"Selected Works",             alt:"A black dog and a wheaten dog seated in front of large blue flowers"},
+    {id:"a3", src:"assets/art3.jpg", title:"Stansfield Commission — III",meta:"Commission · 2022", collection:"Stansfield Commission 2022", alt:"Cream dog lying on a red patterned rug with a striped toy"},
+    {id:"a9", src:"assets/art9.jpg", title:"Untitled — Blossom",         meta:"Details to come",   collection:"Selected Works",             alt:"Black and tan dog lying among pink blossoms on a green ground"},
+    {id:"a4", src:"assets/art4.jpg", title:"Stansfield Commission — IV", meta:"Commission · 2022", collection:"Stansfield Commission 2022", alt:"Dark grey dog holding a tennis ball in front of a leaf-patterned wall"},
+    {id:"a6", src:"assets/art6.jpg", title:"Stansfield Commission — V",  meta:"Commission · 2022", collection:"Stansfield Commission 2022", alt:"Two dogs curled together on a tufted sofa with blue cushions"},
+    {id:"a10",src:"assets/art10.jpg",title:"Untitled — Hound",           meta:"Details to come",   collection:"Selected Works",             alt:"Brown and white hound seated on a geometric blanket before tropical leaves"},
+    {id:"a5", src:"assets/art5.jpg", title:"Stansfield Commission — VI", meta:"Commission · 2022", collection:"Stansfield Commission 2022", alt:"Grey dog seated before a lavender damask wallpaper"},
+    {id:"a8", src:"assets/art8.jpg", title:"Stansfield Commission — VII",meta:"Commission · 2022", collection:"Stansfield Commission 2022", alt:"Shaggy cream dog standing in front of a blue patterned wall"}
+  ],
+  hero:[
+    {art:"a7", moulding:"m-black",  wall:"#C8B8A1"},
+    {art:"a9", moulding:"m-oak",    wall:"#B9B3A2"},
+    {art:"a2", moulding:"m-walnut", wall:"#D2C4B1"},
+    {art:"a10",moulding:"m-gold",   wall:"#A9A291"}
+  ],
+  homeStrip:["a9","a2","a10"],
+  projects:[
+    {id:"p1", title:"The Stansfield Commission", cat:"art", catLabel:"Art · Commission", art:"a1", moulding:"m-walnut", wall:"#CDBEA8", mh:"420px", link:"art", wide:true, desc:"A series of commissioned portraits, 2022. Full project notes to be added."},
+    {id:"p2", title:"Framing Project", cat:"framing", catLabel:"Custom Framing", img:"assets/f1.jpg", alt:"Moulding corner samples and mat boards laid over an artwork", link:"framing", desc:"Moulding, mat and glazing chosen together for the piece. (Reference image — project details to come.)"},
+    {id:"p3", title:"Untitled — Blossom", cat:"art", catLabel:"Art", art:"a9", moulding:"m-oak", wall:"#B8B2A0", mh:"360px", link:"art", desc:"Selected work. Title, medium and dimensions to be confirmed."},
+    {id:"p4", title:"Interior Project", cat:"interiors", catLabel:"Interior Design", img:"assets/i1.jpg", alt:"Sunlit living room with a curated wall of framed art", link:"interiors", desc:"A light-filled room built around a collected art wall. (Reference image — project details to come.)"},
+    {id:"p5", title:"Gallery Wall Study", cat:"framing", catLabel:"Framing · Interiors", img:"assets/i3.jpg", alt:"Gallery wall of mixed frames above a white console", link:"framing", desc:"Framing and placement working together on one wall. (Reference image — project details to come.)"},
+    {id:"p6", title:"Untitled Pair", cat:"art", catLabel:"Art", art:"a7", moulding:"m-black", wall:"#C6B59D", mh:"360px", link:"art", desc:"Selected work. Title, medium and dimensions to be confirmed."},
+    {id:"p7", title:"Interior Project", cat:"interiors", catLabel:"Interior Design", img:"assets/i2.jpg", alt:"Living room with a black-and-white gallery wall above a sofa", link:"interiors", wide:true, desc:"A monochrome gallery wall anchoring a sitting room. (Reference image — project details to come.)"},
+    {id:"p8", title:"Framing Project", cat:"framing", catLabel:"Custom Framing", img:"assets/f4.jpg", alt:"Close-up of an ornate gilded frame corner", link:"framing", desc:"Gilded corner detail — ornament and finish up close. (Reference image — project details to come.)"},
+    {id:"p9", title:"Untitled — Hound", cat:"art", catLabel:"Art", art:"a10", moulding:"m-gold", wall:"#ABA492", mh:"360px", link:"art", desc:"Selected work. Title, medium and dimensions to be confirmed."}
+  ],
+  featured:["p1","p3","p2","p4"],
+  studio:{
+    arts:["a7","a9","a10","a2"],
+    mouldings:[
+      {name:"Ebonised Black", w:16, css:"linear-gradient(135deg,#2b2926,#161513 50%,#2d2a27)"},
+      {name:"Natural Walnut", w:22, css:"linear-gradient(135deg,#5a3d2b,#3d281c 40%,#6b4a35 70%,#3a261a)"},
+      {name:"Pale Oak", w:20, css:"linear-gradient(135deg,#d8c09b,#c4a67c 45%,#e3cfae 70%,#b9996e)"},
+      {name:"Burnished Gold", w:26, css:"linear-gradient(135deg,#b8975a,#e6cf98 25%,#9c7a3f 50%,#d9bc7c 75%,#8e6d36)"},
+      {name:"Gallery White", w:14, css:"linear-gradient(135deg,#f6f3ee,#e5e0d8 60%,#fbfaf7)"}
+    ],
+    mats:[{name:"Warm White",c:"#F7F3EC"},{name:"Linen",c:"#E8DFCF"},{name:"Stone",c:"#B9B0A2"},{name:"Charcoal",c:"#3A3631"}],
+    walls:[{name:"Plaster",c:"#CDBFA9"},{name:"Ivory",c:"#EDE6DA"},{name:"Sage",c:"#A9AE98"},{name:"Ink",c:"#2F3133"}]
+  }
+};
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr">
+  <a href="#home" class="brand" data-nav="home" aria-label="Jay McClellan Studio — home"><b>Jay McClellan</b><span>Art · Framing · Interiors</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#about" data-nav="about">About</a>
+    <a href="#art" data-nav="art">Art</a>
+    <a href="#framing" data-nav="framing">Custom Framing</a>
+    <a href="#interiors" data-nav="interiors">Interiors</a>
+    <a href="#portfolio" data-nav="portfolio">Portfolio</a>
+    <a href="#contact" data-nav="contact" class="cta">Start a Project</a>
+  </nav>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i></button>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <a href="#home" data-nav="home"><small>01</small>Home</a>
+  <a href="#about" data-nav="about"><small>02</small>About Jay</a>
+  <a href="#art" data-nav="art"><small>03</small>Art</a>
+  <a href="#framing" data-nav="framing"><small>04</small>Custom Framing</a>
+  <a href="#interiors" data-nav="interiors"><small>05</small>Interiors</a>
+  <a href="#portfolio" data-nav="portfolio"><small>06</small>Portfolio</a>
+  <a href="#contact" data-nav="contact"><small>07</small>Contact</a>
+  <div class="mfoot">Art · Framing · Interiors</div>
+</nav>
+
+<main id="main">
+
+<!-- ===================== HOME ===================== -->
+<div class="page" data-page="home" data-screen-label="Home">
+  <section class="hero">
+    <div class="hero-copy">
+      <div>
+        <p class="eyebrow rv in">Jay McClellan Studio</p>
+        <h1 class="d1" style="margin-top:30px">
+          <span class="ln"><span>Art, Framing</span></span>
+          <span class="ln"><span>&amp; Interiors —</span></span>
+          <span class="ln"><span><em>Thoughtfully</em> Curated.</span></span>
+        </h1>
+        <p class="lede rv in d2x" style="margin-top:34px">An independent studio where original art, bespoke framing and considered interiors are approached as one craft — so every piece is made, presented and placed with intention.</p>
+        <div class="hero-ctas rv in d3x">
+          <a class="btn btn-dark" href="#art" data-nav="art">Explore the Collection <span class="arr"></span></a>
+          <a class="btn btn-ghost" href="#contact" data-nav="contact">Discuss Your Project <span class="arr"></span></a>
+        </div>
+      </div>
+      <div class="hero-meta"><span>Original Art &amp; Commissions</span><span>Custom Framing</span><span>Interior Design</span></div>
+    </div>
+    <div class="hero-wall" id="heroWall" aria-label="Featured artwork, framed"></div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>Original Art</span><span>Commissions</span><span>Bespoke Framing</span><span>Conservation Mounting</span><span>Interior Styling</span><span>Art Placement</span>
+    <span>Original Art</span><span>Commissions</span><span>Bespoke Framing</span><span>Conservation Mounting</span><span>Interior Styling</span><span>Art Placement</span>
+  </div></div>
+
+  <section class="sec wrap">
+    <div class="intro">
+      <p class="eyebrow rv">The Studio</p>
+      <div>
+        <p class="statement rv">A painting is only half finished until it is framed, and a frame is only half finished until it is <em>hung in the right room.</em> Jay McClellan works across all three — the art, the frame and the space — so nothing is left to chance.</p>
+        <div class="intro-foot">
+          <div class="rv"><span class="n">01 — Make</span><h4>Art</h4><p>Original work and commissioned portraits, painted with colour, pattern and personality.</p></div>
+          <div class="rv d1x"><span class="n">02 — Present</span><h4>Framing</h4><p>Mouldings, mats and glazing chosen to protect the work and complete it.</p></div>
+          <div class="rv d2x"><span class="n">03 — Place</span><h4>Interiors</h4><p>Rooms composed around the things you love, from a single wall to a whole home.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" style="padding-top:0" id="services">
+    <div class="svc-head">
+      <div><p class="eyebrow rv">Disciplines</p><h2 class="d2 rv" style="margin-top:22px">Three crafts,<br><em>one eye.</em></h2></div>
+      <p class="lede rv" style="max-width:40ch">Each discipline stands on its own — together they make for work that feels resolved, from the first brushstroke to the final hanging height.</p>
+    </div>
+
+    <article class="svc svc-art">
+      <div class="svc-text rv">
+        <span class="svc-num">i</span>
+        <h3 class="d3">Art &amp; Creative Work</h3>
+        <p>Original paintings and commissioned portraits — bold colour, layered pattern and a genuine sense of character. Each commission begins with a conversation about the subject and the space it will live in.</p>
+        <ul class="svc-list"><li>Original works <span>Collection</span></li><li>Commissioned portraits <span>By enquiry</span></li><li>Creative projects <span>Bespoke</span></li></ul>
+        <a class="link" href="#art" data-nav="art">View the Art <span class="arr"></span></a>
+      </div>
+      <div class="strip rv d1x" id="artStrip"></div>
+    </article>
+
+    <article class="svc svc-frame">
+      <div class="corner rv mask">
+        <img class="photo" src="assets/f1.jpg" alt="Moulding corner samples and mat boards laid over an artwork" loading="lazy">
+        <span class="tag" style="left:52%;top:16%">Moulding selection</span>
+        <span class="tag" style="left:8%;top:78%">Mat &amp; mount</span>
+      </div>
+      <div class="svc-text rv d1x">
+        <span class="svc-num">ii</span>
+        <h3 class="d3">Custom Framing</h3>
+        <p>Bespoke framing for originals, prints, photographs and treasured objects. Mouldings, mats and glazing are selected for the piece — its colour, its scale and where it will hang.</p>
+        <ul class="svc-list"><li>Moulding &amp; finish selection <span>Wood · Metal · Gilt</span></li><li>Mat cutting &amp; mounting <span>Archival</span></li><li>Glazing options <span>Clear · UV · Museum</span></li><li>Object &amp; shadowbox framing <span>Bespoke</span></li></ul>
+        <a class="link" href="#framing" data-nav="framing">Explore Framing <span class="arr"></span></a>
+      </div>
+    </article>
+
+    <article class="svc svc-int">
+      <div class="ph-big rv mask" style="overflow:hidden"><img class="photo" src="assets/i1.jpg" alt="Sunlit living room with a curated wall of framed art" loading="lazy"></div>
+      <div class="svc-text rv">
+        <span class="svc-num">iii</span>
+        <h3 class="d3">Interior Design</h3>
+        <p>Curated interiors that give art room to breathe. From room styling and art placement to full design concepts, spaces are composed to feel calm, personal and complete.</p>
+        <ul class="svc-list"><li>Design concepts <span>Full rooms</span></li><li>Room styling <span>Refresh</span></li><li>Art curation &amp; placement <span>Walls</span></li></ul>
+        <a class="link" href="#interiors" data-nav="interiors">See Interiors <span class="arr"></span></a>
+      </div>
+    </article>
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="sec wrap">
+    <div class="svc-head">
+      <div><p class="eyebrow rv">Selected Work</p><h2 class="d2 rv" style="margin-top:22px">Featured <em>projects</em></h2></div>
+      <a class="btn btn-ghost rv" href="#portfolio" data-nav="portfolio">Full Portfolio <span class="arr"></span></a>
+    </div>
+    <div class="feat-grid" id="featGrid"></div>
+  </section>
+
+  <section class="philo sec wrap">
+    <p class="eyebrow rv">Creative Philosophy</p>
+    <h2 class="d2 rv" style="margin-top:24px;max-width:16ch">Meaningful rooms are built from <em>meaningful things.</em></h2>
+    <div class="philo-grid">
+      <div class="rv"><span class="n">i.</span><h3>Art gives a room its voice</h3><p>The work on the walls says who lives there. It should be chosen — or made — with the same care as the people it belongs to.</p></div>
+      <div class="rv d1x"><span class="n">ii.</span><h3>Framing is the bridge</h3><p>A well-chosen frame connects the artwork to the room around it, protecting what matters while letting it be seen at its best.</p></div>
+      <div class="rv d2x"><span class="n">iii.</span><h3>Space is the setting</h3><p>Light, scale, colour and proportion decide how a piece is experienced. Design the room and the art finally has somewhere to belong.</p></div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="svc-head" style="margin-bottom:0">
+      <div><p class="eyebrow rv">How We Work</p><h2 class="d2 rv" style="margin-top:22px">From first conversation<br>to <em>final hanging.</em></h2></div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="k">Step one</span><h4>Conversation</h4><p>Tell us about the piece, the commission or the room — what you have, what you love and where it’s going.</p></div>
+      <div class="step rv d1x"><span class="k">Step two</span><h4>Consultation</h4><p>We look at the work and the space together, and talk through materials, scale and direction.</p></div>
+      <div class="step rv d2x"><span class="k">Step three</span><h4>Proposal</h4><p>A clear recommendation — frame and mat samples, design concepts or a commission brief — with transparent pricing.</p></div>
+      <div class="step rv d3x"><span class="k">Step four</span><h4>Craft &amp; Install</h4><p>The work is made, framed or styled, then delivered and placed so it looks exactly as intended.</p></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="left">
+      <p class="eyebrow rv">Begin</p>
+      <h2 class="d2 rv">Have a piece, a wall, or a room <em>in mind?</em></h2>
+      <p class="lede rv">Whether it’s a commission, a treasured work that deserves a proper frame, or a space that needs pulling together — let’s talk it through.</p>
+      <div class="cta-opts rv">
+        <a href="#contact" data-nav="contact" data-interest="Art Commission">Commission artwork <span class="mono">→</span></a>
+        <a href="#contact" data-nav="contact" data-interest="Custom Framing">Explore custom framing <span class="mono">→</span></a>
+        <a href="#contact" data-nav="contact" data-interest="Interior Design">Discuss an interior <span class="mono">→</span></a>
+      </div>
+    </div>
+    <div class="right"><div class="frame m-oak rv"><div class="mat"><img src="assets/art10.jpg" alt="Framed portrait of a brown and white hound" loading="lazy"></div></div></div>
+  </section>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<div class="page" data-page="about" data-screen-label="About">
+  <section class="phead">
+    <div><span class="crumb">02 / About Jay</span><h1 class="d1">The person<br>behind the <em>studio.</em></h1></div>
+    <p class="lede">Artist, framer and interior designer — three disciplines held together by one sensibility for colour, proportion and craft.</p>
+  </section>
+  <section class="sec wrap">
+    <div class="about-grid">
+      <div class="ph rv about-photo" role="img" aria-label="Portrait of Jay placeholder"><span class="phl">Portrait of Jay — to be supplied</span></div>
+      <div class="about-copy">
+        <span class="note">Biography placeholder — to be replaced with Jay’s own words</span>
+        <p class="statement rv">“Introduce yourself here — <em>in your own voice.</em>”</p>
+        <p class="rv">This space is reserved for Jay’s professional introduction: how the studio began, the path into art, framing and interior design, and what continues to drive the work today.</p>
+        <p class="rv">A second paragraph can describe training, influences and the kinds of clients and projects the studio is best suited to — kept factual, personal and concise.</p>
+        <h3 class="d3 rv" style="margin:70px 0 22px">Approach</h3>
+        <p class="rv">Every project is treated as a whole: the artwork, the way it is presented and the room it lives in. Rather than working on each in isolation, the studio considers how they inform one another — so that a commission is painted with its frame in mind, and a frame is chosen with its wall in mind.</p>
+        <p class="rv">The result is work that feels resolved and personal, rather than assembled.</p>
+        <div class="disc">
+          <a href="#art" data-nav="art" class="rv"><h4>Art →</h4><p>Originals &amp; commissions</p></a>
+          <a href="#framing" data-nav="framing" class="rv d1x"><h4>Framing →</h4><p>Bespoke presentation</p></a>
+          <a href="#interiors" data-nav="interiors" class="rv d2x"><h4>Interiors →</h4><p>Curated spaces</p></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="philo sec wrap">
+    <p class="eyebrow rv">Creative Philosophy</p>
+    <p class="quote rv" style="margin-top:30px;max-width:26ch">Art, the frame and the room are not three separate decisions. They are one.</p>
+  </section>
+</div>
+
+<!-- ===================== ART ===================== -->
+<div class="page" data-page="art" data-screen-label="Art">
+  <section class="phead">
+    <div><span class="crumb">03 / Art</span><h1 class="d1">The <em>Collection.</em></h1></div>
+    <p class="lede">Original works and commissioned portraits — saturated colour, layered pattern and subjects full of personality. Select any work to view it larger.</p>
+  </section>
+  <section class="sec wrap" style="padding-top:60px">
+    <div class="filters" id="artFilters" role="group" aria-label="Filter by collection"></div>
+    <div class="masonry" id="artMasonry"></div>
+  </section>
+  <section class="sec wrap" style="background:var(--ivory)">
+    <div class="commission">
+      <div class="wall rv">
+        <div class="frame m-walnut"><div class="mat"><img src="assets/art4.jpg" alt="Framed commission portrait" style="width:180px" loading="lazy"></div></div>
+        <div class="frame m-walnut" style="margin-top:60px"><div class="mat"><img src="assets/art5.jpg" alt="Framed commission portrait" style="width:180px" loading="lazy"></div></div>
+      </div>
+      <div>
+        <p class="eyebrow rv">Commissions</p>
+        <h2 class="d2 rv" style="margin:22px 0 26px">A portrait <em>made for</em> your walls.</h2>
+        <p class="lede rv" style="margin-bottom:36px">Commissions are designed around their subject and their setting — palette, pattern and scale considered alongside the room, and framed to finish. Share a little about what you have in mind to begin.</p>
+        <a class="btn btn-dark rv" href="#contact" data-nav="contact" data-interest="Art Commission">Enquire About a Commission <span class="arr"></span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== FRAMING ===================== -->
+<div class="page" data-page="framing" data-screen-label="Custom Framing">
+  <section class="phead">
+    <div><span class="crumb">04 / Custom Framing</span><h1 class="d1">The frame<br><em>completes</em> the work.</h1></div>
+    <p class="lede">Bespoke framing for original art, prints, photographs, textiles and objects — every moulding, mat and pane of glass chosen for the piece in hand.</p>
+  </section>
+
+  <section class="studio" id="studio" aria-label="Framing preview">
+    <div class="stage" id="stStage">
+      <div class="frame" id="stFrame"><div class="mat"><img id="stImg" alt=""></div></div>
+      <span class="lbl" id="stLbl"></span>
+    </div>
+    <div class="ctrl">
+      <div><p class="eyebrow">Try it</p><h2 class="d3" style="margin-top:16px">A small taste of the <em>framing table.</em></h2><p class="muted" style="margin-top:12px;font-size:15px">An illustrative preview — in the studio, real samples are laid against your work.</p></div>
+      <div><h5>Artwork</h5><div class="thumbs" id="stArts"></div></div>
+      <div><h5>Moulding <span id="stM"></span></h5><div class="swatches" id="swM"></div></div>
+      <div><h5>Mat <span id="stMat"></span></h5><div class="swatches" id="swMat"></div></div>
+      <div><h5>Mat reveal <span id="stMW"></span></h5><input id="stRange" type="range" min="10" max="80" value="40" aria-label="Mat width"></div>
+      <div><h5>Wall <span id="stW"></span></h5><div class="swatches" id="swW"></div></div>
+      <a class="btn btn-dark" href="#contact" data-nav="contact" data-interest="Custom Framing" style="align-self:flex-start">Book a Framing Consultation <span class="arr"></span></a>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="svc-head"><div><p class="eyebrow rv">Materials &amp; Craft</p><h2 class="d2 rv" style="margin-top:22px">Chosen for the <em>piece,</em><br>not the catalogue.</h2></div></div>
+    <div class="materials">
+      <div class="material rv"><div class="sw" style="background:linear-gradient(135deg,#5a3d2b,#3d281c 40%,#6b4a35 70%,#3a261a)"></div><h4>Mouldings</h4><p>Hardwoods, painted and gilded finishes, and slim metal profiles — selected for colour, depth and scale.</p></div>
+      <div class="material rv d1x"><div class="sw" style="background:#E8DFCF;box-shadow:inset 0 0 0 22px #F7F3EC,inset 0 0 0 23px rgba(0,0,0,.15)"></div><h4>Mats &amp; Mounts</h4><p>Hand-cut bevelled mats, float mounts and archival mounting that keeps the work safe for years to come.</p></div>
+      <div class="material rv d2x"><div class="sw" style="background:linear-gradient(120deg,#dfe4e3 0%,#f5f7f6 40%,#d5dbd9 41%,#eef1f0 100%)"></div><h4>Glazing</h4><p>Clear, UV-filtering and low-reflection options to protect colour and let the work be seen clearly.</p></div>
+      <div class="material rv d3x"><div class="sw" style="background:#cdbfa9;box-shadow:inset 0 0 0 14px #2b2926,inset 0 0 0 30px #b9b0a2"></div><h4>Objects &amp; Shadowboxes</h4><p>Deep frames for textiles, memorabilia and three-dimensional pieces that deserve to be displayed.</p></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" style="padding-top:0">
+    <div class="svc-head"><div><p class="eyebrow rv">Gallery</p><h2 class="d2 rv" style="margin-top:22px">Framing <em>projects</em></h2></div><p class="muted rv" style="max-width:36ch;font-size:14px">Reference imagery shown — to be replaced with photography of the studio’s own framing work.</p></div>
+    <div class="gal3">
+      <figure class="rv"><img src="assets/f3.jpg" alt="Wall of moulding corner samples in a framing studio" loading="lazy"><figcaption>Moulding library</figcaption></figure>
+      <figure class="rv d1x"><img src="assets/f4.jpg" alt="Ornate gilded frame corner close-up" loading="lazy"><figcaption>Corner detail</figcaption></figure>
+      <figure class="rv d2x"><img src="assets/f1.jpg" alt="Moulding samples and mat boards" loading="lazy"><figcaption>Mats &amp; mouldings</figcaption></figure>
+      <figure class="rv d1x"><img src="assets/i3.jpg" alt="Gallery wall of mixed frames" loading="lazy"><figcaption>Gallery wall</figcaption></figure>
+      <figure class="rv d2x"><img src="assets/i5.jpg" alt="Teal room with framed works and an armchair" loading="lazy"><figcaption>Installed</figcaption></figure>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== INTERIORS ===================== -->
+<div class="page" data-page="interiors" data-screen-label="Interior Design">
+  <section class="phead">
+    <div><span class="crumb">05 / Interior Design</span><h1 class="d1">Rooms with<br>a <em>point of view.</em></h1></div>
+    <p class="lede">Curated interiors designed around the art and objects you love — calm, layered spaces where every piece has a reason to be there.</p>
+  </section>
+  <section style="padding:0 var(--pad)">
+    <div class="rv mask" style="aspect-ratio:21/9;min-height:340px;overflow:hidden"><img class="photo" src="assets/i2.jpg" alt="Living room with a black-and-white gallery wall above a sofa"></div>
+  </section>
+  <section class="sec wrap">
+    <div class="svc-head"><div><p class="eyebrow rv">Capabilities</p><h2 class="d2 rv" style="margin-top:22px">What the studio <em>does.</em></h2></div></div>
+    <div class="cap-list">
+      <div class="rv"><span class="n">i.</span><div><h4>Design Concepts</h4><p>Mood, palette, materials and layout brought together into a clear direction for a room or a home.</p></div></div>
+      <div class="rv d1x"><span class="n">ii.</span><div><h4>Room Styling</h4><p>Refreshing an existing space with furniture arrangement, textiles, lighting and accessories.</p></div></div>
+      <div class="rv"><span class="n">iii.</span><div><h4>Art Curation &amp; Placement</h4><p>Selecting, framing and hanging art at the right scale and height — single statement pieces or full gallery walls.</p></div></div>
+      <div class="rv d1x"><span class="n">iv.</span><div><h4>Completed Spaces</h4><p>Seeing a scheme through, from first concept to the final styled room.</p></div></div>
+    </div>
+  </section>
+  <section class="vignette">
+    <div class="room rv"><div class="frame m-black"><div class="mat"><img src="assets/art9.jpg" alt="Framed artwork shown above a console in a room vignette" loading="lazy"></div></div><div class="console"></div></div>
+    <div class="wrap" style="display:flex;flex-direction:column;justify-content:center;gap:26px;padding-top:70px;padding-bottom:70px;background:var(--ivory)">
+      <p class="eyebrow rv">Art-led Design</p>
+      <h2 class="d2 rv">Start with the <em>art,</em> build the room around it.</h2>
+      <p class="lede rv">Because the studio frames and creates art as well as designing spaces, the work on your walls is never an afterthought — it’s the starting point.</p>
+      <a class="btn btn-dark rv" style="align-self:flex-start" href="#contact" data-nav="contact" data-interest="Interior Design">Discuss Your Space <span class="arr"></span></a>
+    </div>
+  </section>
+  <section class="sec wrap">
+    <div class="svc-head"><div><p class="eyebrow rv">Portfolio</p><h2 class="d2 rv" style="margin-top:22px">Interior <em>projects</em></h2></div><p class="muted rv" style="max-width:36ch;font-size:14px">Reference imagery shown — to be replaced with photography of completed studio projects.</p></div>
+    <div class="gal3">
+      <figure class="rv"><img src="assets/i1.jpg" alt="Sunlit living room with framed art" loading="lazy"><figcaption>Living room</figcaption></figure>
+      <figure class="rv d1x"><img src="assets/i4.jpg" alt="Study with a desk beneath a salon-style art wall" loading="lazy"><figcaption>Study</figcaption></figure>
+      <figure class="rv d2x"><img src="assets/i5.jpg" alt="Teal reading corner with framed works" loading="lazy"><figcaption>Reading corner</figcaption></figure>
+      <figure class="rv d1x"><img src="assets/i3.jpg" alt="Gallery wall above a console" loading="lazy"><figcaption>Art wall</figcaption></figure>
+      <figure class="rv d2x"><img src="assets/i2.jpg" alt="Monochrome gallery wall above a sofa" loading="lazy"><figcaption>Sitting room</figcaption></figure>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== PORTFOLIO ===================== -->
+<div class="page" data-page="portfolio" data-screen-label="Portfolio">
+  <section class="phead">
+    <div><span class="crumb">06 / Portfolio</span><h1 class="d1">Selected <em>work.</em></h1></div>
+    <p class="lede">A curated collection of completed projects across art, custom framing and interior design.</p>
+  </section>
+  <section class="sec wrap" style="padding-top:60px">
+    <div class="filters" id="portFilters" role="group" aria-label="Filter by discipline">
+      <button class="on" data-f="all">All</button><button data-f="art">Art</button><button data-f="framing">Custom Framing</button><button data-f="interiors">Interiors</button>
+    </div>
+    <div class="pgrid" id="portGrid"></div>
+  </section>
+</div>
+
+<!-- ===================== CONTACT ===================== -->
+<div class="page" data-page="contact" data-screen-label="Contact">
+  <section class="phead">
+    <div><span class="crumb">07 / Contact</span><h1 class="d1">Let’s talk about<br>your <em>project.</em></h1></div>
+    <p class="lede">Commission artwork, frame something special, or design a space. Share a few details and the studio will be in touch to arrange a consultation.</p>
+  </section>
+  <section class="sec wrap" style="padding-top:60px">
+    <div class="contact-grid">
+      <div class="cinfo">
+        <p class="eyebrow">Studio</p>
+        <dl>
+          <div><dt>Email</dt><dd id="cEmail"></dd></div>
+          <div><dt>Phone</dt><dd id="cPhone"></dd></div>
+          <div><dt>Visit</dt><dd id="cLoc"></dd></div>
+          <div><dt>Follow</dt><dd style="font-size:20px"><a class="link" href="#" id="cIg" rel="noopener noreferrer" target="_blank">Instagram</a>&nbsp;&nbsp; <a class="link" href="#" id="cFb" rel="noopener noreferrer" target="_blank">Facebook</a></dd></div>
+        </dl>
+      </div>
+      <div>
+        <form id="inq" class="form" novalidate autocomplete="on">
+          <div class="fld full"><label>I’m interested in</label>
+            <div class="chips">
+              <label><input type="checkbox" name="interest" value="Art Commission"><span>Art Commission</span></label>
+              <label><input type="checkbox" name="interest" value="Purchasing Art"><span>Purchasing Art</span></label>
+              <label><input type="checkbox" name="interest" value="Custom Framing"><span>Custom Framing</span></label>
+              <label><input type="checkbox" name="interest" value="Interior Design"><span>Interior Design</span></label>
+            </div>
+          </div>
+          <div class="fld"><label for="f-name">Name *</label><input id="f-name" name="name" required maxlength="120" autocomplete="name"><div class="err">Please add your name.</div></div>
+          <div class="fld"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required maxlength="160" autocomplete="email"><div class="err">Please add a valid email.</div></div>
+          <div class="fld"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" maxlength="40" autocomplete="tel"></div>
+          <div class="fld"><label for="f-time">Timeline</label><select id="f-time" name="timeline"><option value="">Select…</option><option>As soon as possible</option><option>1–3 months</option><option>3–6 months</option><option>Just exploring</option></select></div>
+          <div class="fld full"><label for="f-msg">Tell us about your project *</label><textarea id="f-msg" name="message" required maxlength="4000" placeholder="The piece, the room, sizes, ideas…"></textarea><div class="err">A few words about your project, please.</div></div>
+          <div class="hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <label class="consent full"><input type="checkbox" required name="consent"><span>I agree to be contacted about this enquiry. Details are used only to respond and never shared.</span></label>
+          <div class="full" style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+            <button type="submit" class="btn btn-dark">Send Inquiry <span class="arr"></span></button>
+            <span id="formErr" class="muted" style="display:none;color:#a2452c;font-size:14px">Something went wrong — please try again or email the studio directly.</span>
+          </div>
+        </form>
+        <div class="sent" id="sent" role="status" aria-live="polite">
+          <p class="eyebrow">Received</p>
+          <h2 class="d2" style="margin:20px 0">Thank you, <em id="sentName"></em>.</h2>
+          <p class="lede">Your enquiry is with the studio. Expect a reply to arrange a conversation about your project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr-top">
+    <div>
+      <p class="big">Art, framing &amp;<br>interiors — <em>curated.</em></p>
+      <div class="social" aria-label="Social">
+        <a href="#" id="sIg" aria-label="Instagram" rel="noopener noreferrer" target="_blank">IG</a>
+        <a href="#" id="sFb" aria-label="Facebook" rel="noopener noreferrer" target="_blank">FB</a>
+        <a href="#" id="sPi" aria-label="Pinterest" rel="noopener noreferrer" target="_blank">PI</a>
+      </div>
+    </div>
+    <div><h5>Studio</h5><ul><li><a href="#about" data-nav="about">About Jay</a></li><li><a href="#portfolio" data-nav="portfolio">Portfolio</a></li><li><a href="#contact" data-nav="contact">Contact</a></li></ul></div>
+    <div><h5>Disciplines</h5><ul><li><a href="#art" data-nav="art">Art</a></li><li><a href="#framing" data-nav="framing">Custom Framing</a></li><li><a href="#interiors" data-nav="interiors">Interior Design</a></li></ul></div>
+    <div><h5>Enquiries</h5><ul><li id="fEmail"></li><li id="fPhone"></li><li><a href="#contact" data-nav="contact">Start a project →</a></li></ul></div>
+  </div>
+  <div class="ftr-bot"><span>© <span id="yr"></span> Jay McClellan Studio</span><span>Art · Custom Framing · Interior Design</span></div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Artwork viewer" aria-hidden="true">
+  <button class="x">Close ✕</button>
+  <button class="pv" aria-label="Previous">←</button>
+  <figure><img id="lbImg" alt=""><figcaption><b id="lbT"></b><span id="lbM"></span></figcaption></figure>
+  <button class="nx" aria-label="Next">→</button>
+</div>
+
+<script>
+(function(){const c=window.SITE.contact,t=(i,v)=>{const e=document.getElementById(i);if(e)e.textContent=v};
+t('cEmail',c.email);t('cPhone',c.phone);t('cLoc',c.location);t('fEmail',c.email);t('fPhone',c.phone);
+[['cIg',c.instagram],['sIg',c.instagram],['cFb',c.facebook],['sFb',c.facebook],['sPi',c.pinterest]].forEach(([i,u])=>{const e=document.getElementById(i);if(e&&/^https:\/\//.test(u))e.href=u;});})();
+</script>
+<script src="site.js"></script>
+</body>
+</html>
